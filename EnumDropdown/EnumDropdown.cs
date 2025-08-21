@@ -23,7 +23,7 @@ namespace EnumDropdown
         public override string Name => "EnumDropdown";
         public override string Author => "badhaloninja";
         public override string Version => "2.1.1";
-        public override string Link => "https://github.com/badhaloninja/EnumDropdown";
+        public override string Link => "https://github.com/lill-la/EnumDropdown";
 
         private readonly static MethodInfo buildSelectorUI = typeof(EnumDropdown).GetMethod(nameof(BuildSelectorUI), BindingFlags.Static | BindingFlags.NonPublic); // Store this for later :)
 
@@ -39,7 +39,7 @@ namespace EnumDropdown
         public override void OnEngineInit()
         {
             config = GetConfiguration();
-            Harmony harmony = new("ninja.badhalo.EnumDropdown");
+            Harmony harmony = new("la.lill.EnumDropdown");
             harmony.PatchAll();
         }
         
